@@ -1,0 +1,24 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.agrourbana.ag/
+name: AgroUrbana Plans and Pricing
+description: >-
+  AgroUrbana publishes no API plans, developer tiers, quotas or API pricing of any kind, because
+  it publishes no API. The only commercial surface the company operates publicly is the Urban
+  Rabbit consumer storefront at www.agrourbana.ag, a hosted Bootic shop selling leafy greens to
+  Chilean consumers; its product-collection, cart and customer routes (/collections/nuevo, /cart,
+  /customer) all return HTTP 404 as of this probe, consistent with reporting that the company
+  paused production in 2026 while seeking new financing. Wholesale supply to Cencosud and Walmart
+  Chile is contracted off-site and no rate card is published.
+plan_count: 0
+plans: []
+notes:
+- No developer plans, API pricing page, free tier or usage quota exists on any AgroUrbana host.
+- Consumer produce pricing is not API pricing and is deliberately not recorded as a plan.
+evidence:
+- url: https://www.agrourbana.ag/
+  status: 200
+- url: https://www.agrourbana.ag/collections/nuevo
+  status: 404
+- url: https://www.agrourbana.ag/cart
+  status: 404

@@ -1,0 +1,19 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.agrourbana.ag/
+name: AgroUrbana Rate Limits
+description: >-
+  No rate limits are published, and none can be, because AgroUrbana exposes no public API. No
+  developer portal, API reference, OpenAPI document or API host was found on any AgroUrbana host
+  (see well-known/agrourbana-well-known.yml for the probe record), so there is no documented
+  limit, window, burst, exhaustion status code or RateLimit-* response header to capture.
+limit_count: 0
+rate_limits: []
+headers: []
+notes:
+- Honest zero. Absence of an API, not absence of documentation for one.
+evidence:
+- url: https://agrourbana.ag/openapi.json
+  status: 404
+- url: https://www.agrourbana.ag/docs
+  status: 404

@@ -64,5 +64,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Agrourbana is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+AgroUrbana SpA is a Chilean vertical-farming company founded in 2018 in Santiago by Pablo Bunster and Cristian Sjogren, and widely described as the first commercial vertical farm in Latin America. It runs climate-controlled indoor grow facilities combining hydroponics, spectrum-programmed LED lighting, renewable energy, automation and data analytics to produce leafy greens year round, selling to Chilean retailers including Cencosud and Walmart Chile and direct to consumers under the Urban Rabbit brand.
+
+**AgroUrbana publishes no public API.** As of 2026-09-13 there is no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract, SDK, CLI, MCP server, A2A agent card or `.well-known` document on any host the company operates. The probe record is in `well-known/agrourbana-well-known.yml`; the reason this profile is thin is recorded as `x-coverage` in `apis.yml`.
+
+- https://www.agrourbana.ag/
+- https://cl.linkedin.com/company/agrourbana
 - https://equityzen.com/company/agrourbana

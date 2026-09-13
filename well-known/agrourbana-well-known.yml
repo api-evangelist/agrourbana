@@ -1,0 +1,165 @@
+generated: '2026-09-13'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of every host AgroUrbana is known at — the storefront host
+  www.agrourbana.ag, the apex agrourbana.ag, and the legacy Chilean domain agrourbana.cl (which
+  301s to www.agrourbana.ag). There is no API baseURL host and no OpenAPI servers[] host to probe,
+  because AgroUrbana publishes no API.
+name: AgroUrbana .well-known Probe
+description: >-
+  No .well-known document is served on any AgroUrbana host. The apex agrourbana.ag answers every
+  named path with a hard 404 (text/plain, 10 bytes, "Not Found"). The storefront host
+  www.agrourbana.ag — a hosted Bootic store — RESETS the TLS connection on every /.well-known/*
+  request (curl 56 on HTTP/1.1, HTTP/2 PROTOCOL_ERROR on h2) while answering ordinary paths
+  normally, so those rows record status 0 rather than a code. agrourbana.cl returns an Apache
+  404 for every named path. NO WellKnown and NO SecurityTxt pointer is emitted: nothing here is
+  a hit, and the file records an absence, not a presence.
+hit_count: 0
+path_echo_control: passed
+soft_404_control:
+  url: https://agrourbana.ag/.well-known/agrourbana-negative-control-7f3ab91c.json
+  status: 404
+  content_type: text/plain; charset=utf-8
+  bytes: 10
+  note: >-
+    Negative control on the apex. A path that cannot exist returns the same hard 404 as every
+    real path, so this host is not a path-echoing or catch-all responder.
+hosts:
+- host: https://agrourbana.ag
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://www.agrourbana.ag
+  note: >-
+    Bootic-hosted storefront. Every /.well-known/* request is answered with a TLS connection
+    reset, not an HTTP status; the two root-level paths answer with the store's own 404 page.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 0
+    file: null
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 0
+    file: null
+  - path: /.well-known/apis.json
+    status: 0
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 0
+    file: null
+  - path: /.well-known/acp.json
+    status: 0
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 0
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null
+- host: https://agrourbana.cl
+  note: >-
+    Legacy Chilean domain; the site root 301s to https://www.agrourbana.ag/. Apache serves a
+    196-byte HTML 404 for every named .well-known path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 302
+    file: null
+  - path: /apis.yml
+    status: 302
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

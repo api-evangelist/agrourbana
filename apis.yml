@@ -1,7 +1,18 @@
 aid: agrourbana
-name: Agrourbana
-description: 'Agrourbana is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: AgroUrbana
+description: >-
+  AgroUrbana SpA is a Chilean vertical-farming company founded in 2018 in Santiago by Pablo
+  Bunster and Cristian Sjogren, and widely described as the first commercial vertical farm in
+  Latin America. It runs climate-controlled indoor grow facilities combining hydroponics,
+  spectrum-programmed LED lighting, renewable energy, automation and data analytics to produce
+  leafy greens year round, reporting up to twelve growing cycles a year and up to 95% less water
+  use than open-field agriculture. Produce is sold to Chilean retailers including Cencosud and
+  Walmart Chile, and direct to consumers under the Urban Rabbit brand through a hosted online
+  store. The company has raised roughly USD 12 million, including a USD 4 million Series A led by
+  Kayyak Ventures and a USD 6 million pre-Series B led by ALB Inversiones. AgroUrbana operates
+  its technology internally to run its own farms and publishes no public API, SDK, developer
+  portal or machine-readable API contract.
+image: https://static.bolder.run/23001/logo/original/logo-logo-UR_AU-para-notificacionepurp.png
 url: https://raw.githubusercontent.com/api-evangelist/agrourbana/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -10,8 +21,17 @@ x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-13'
 modified: '2026-09-13'
+position: Consuming
 tags:
 - Company
+- Agriculture
+- AgTech
+- Vertical Farming
+- Food and Beverage
+- Controlled Environment Agriculture
+- Chile
+- Latin America
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/agrourbana-domain-security.yml
+- type: Plans
+  url: plans/agrourbana-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/agrourbana-rate-limits.yml
+- type: LLMsTxt
+  url: llms/agrourbana-llms.txt
 - type: Website
+  url: https://www.agrourbana.ag/
+- type: TermsOfService
+  url: https://www.agrourbana.ag/terminos-y-condiciones
+- type: ContactUs
+  url: https://www.agrourbana.ag/contact
+- type: LinkedIn
+  url: https://cl.linkedin.com/company/agrourbana
+- type: x-SecondaryMarket
   url: https://equityzen.com/company/agrourbana
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    AgroUrbana sells physical produce, not software: its only public digital surface is the Urban
+    Rabbit consumer storefront on the hosted Bootic platform, whose own product, cart and customer
+    routes now 404, and no developer portal, API host, OpenAPI document or .well-known document
+    exists on agrourbana.ag, www.agrourbana.ag or agrourbana.cl.
+  evidence:
+  - url: https://www.agrourbana.ag/
+    status: 200
+  - url: https://agrourbana.ag/openapi.json
+    status: 404
+  - url: https://agrourbana.ag/.well-known/security.txt
+    status: 404
+  - url: https://www.agrourbana.ag/docs
+    status: 404
+  - url: https://api.github.com/orgs/agrourbana
+    status: 404
+  checked: '2026-09-13'
