@@ -1,4 +1,4 @@
-# Agrourbana
+# AgroUrbana
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,10 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AgroUrbana SpA is a Chilean vertical-farming company founded in 2018 in Santiago by Pablo Bunster and Cristian Sjogren, and widely described as the first commercial vertical farm in Latin America. It runs climate-controlled indoor grow facilities combining hydroponics, spectrum-programmed LED lighting, renewable energy, automation and data analytics to produce leafy greens year round, selling to Chilean retailers including Cencosud and Walmart Chile and direct to consumers under the Urban Rabbit brand.
+AgroUrbana SpA is a Chilean vertical-farming company founded in 2018 in Santiago by Pablo Bunster and Cristian Sjogren, and widely described as the first commercial vertical farm in Latin America. It runs climate-controlled indoor grow facilities combining hydroponics, spectrum-programmed LED lighting, renewable energy, automation and data analytics to produce leafy greens year round, reporting up to twelve growing cycles a year and up to 95% less water use than open-field agriculture. Produce is sold to Chilean retailers including Cencosud and Walmart Chile, and direct to consumers under the Urban Rabbit brand through a hosted online store. The company has raised roughly USD 12 million, including a USD 4 million Series A led by Kayyak Ventures and a USD 6 million pre-Series B led by ALB Inversiones. AgroUrbana operates its technology internally to run its own farms and publishes no public API, SDK, developer portal or machine-readable API contract.
 
-**AgroUrbana publishes no public API.** As of 2026-09-13 there is no developer portal, API reference, OpenAPI/AsyncAPI/GraphQL contract, SDK, CLI, MCP server, A2A agent card or `.well-known` document on any host the company operates. The probe record is in `well-known/agrourbana-well-known.yml`; the reason this profile is thin is recorded as `x-coverage` in `apis.yml`.
+**Areas:** Company · Agriculture · AgTech · Vertical Farming · Food and Beverage · Controlled Environment Agriculture · Chile · Latin America · Sustainability
 
-- https://www.agrourbana.ag/
-- https://cl.linkedin.com/company/agrourbana
-- https://equityzen.com/company/agrourbana
+## AgroUrbana on APIs.io
+
+Everything profiled for AgroUrbana is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agrourbana/](https://apis.io/providers/agrourbana/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Agrourbana Domain Security](https://apis.io/security/agrourbana/agrourbana-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Agrourbana Plans Pricing](https://apis.io/plans/agrourbana/agrourbana-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Agrourbana Rate Limits](https://apis.io/rate-limits/agrourbana/agrourbana-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.agrourbana.ag/)
+- [Blog](https://www.agrourbana.ag/blog)
+- [Terms of service](https://www.agrourbana.ag/terminos-y-condiciones)
+
+## API Evangelist rating
+
+**Kin Score 6.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agrourbana/](https://apis.io/providers/agrourbana/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AgroUrbana: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agrourbana/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
